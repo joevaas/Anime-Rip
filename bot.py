@@ -7,23 +7,6 @@ import sys
 from datetime import datetime
 from config import API_HASH, API_ID, LOGGER, BOT_TOKEN, TG_BOT_WORKERS, FORCE_SUB_CHANNEL, CHANNEL_ID, PORT
 import pyrogram.utils
-import asyncio
-import aiohttp
-
-URL = "https://inner-kristien-joevaas-5938480a.koyeb.app/"
-
-async def ping():
- async with aiohttp.ClientSession() as session:
-        while True:
-            try:
-                async with session.get(URL) as response:
-                    print(f"Pinged server, status: {response.status}")
-            except Exception as e:
-                print(f"{e}")
-            await asyncio.sleep(600)
-
-loop = asyncio.get_event_loop()
-loop.create_task(ping())
 
 pyrogram.utils.MIN_CHANNEL_ID = -1009999999999
 
