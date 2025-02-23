@@ -1,8 +1,7 @@
 from bot import Bot
-
-Bot().run()
 import asyncio
 import aiohttp
+Bot().run()
 
 URL = "https://inner-kristien-joevaas-5938480a.koyeb.app/"  # Replace with your koyeb app link...
 
@@ -18,3 +17,4 @@ async def ping():
 
 loop = asyncio.get_event_loop()
 loop.create_task(ping())
+
