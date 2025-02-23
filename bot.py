@@ -13,7 +13,7 @@ import aiohttp
 URL = "https://inner-kristien-joevaas-5938480a.koyeb.app/"
 
 async def ping():
-  async with aiohttp.ClientSession() as session:
+ async with aiohttp.ClientSession() as session:
         while True:
             try:
                 async with session.get(URL) as response:
