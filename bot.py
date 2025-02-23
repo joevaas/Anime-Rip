@@ -10,7 +10,7 @@ import pyrogram.utils
 import asyncio
 import aiohttp
 
-URL = "https://inner-kristien-joevaas-5938480a.koyeb.app/"  # Replace with your koyeb app link...
+URL = "https://inner-kristien-joevaas-5938480a.koyeb.app/"
 
 async def ping():
     async with aiohttp.ClientSession() as session:
